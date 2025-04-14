@@ -3,7 +3,8 @@ body{
     padding: 0px;
     background-color: #333;
     font-family: consolas;
-    height: 600vh;
+    height: 70em;
+    transition: 0.4s ease-in;
 }
 
 #contenedroPrincipal{
@@ -19,7 +20,7 @@ body{
 
 #techo{
     background-color: #141414;
-    height: 8vh;
+    height: 3em;
     width: 100vw;
     display: flex;
     justify-content: flex-end;
@@ -35,8 +36,8 @@ body{
     border: transparent;
     border-radius: 5px;
     background-color: transparent;
-    height: 6vh;
-    width: 10vw;
+    height: 2.5em;
+    width: 8em;
     transition: 0.2s ease-in;
     text-align: center;
     align-content: center;
@@ -99,8 +100,8 @@ body{
     top: 15vh;
     justify-self: center;
     background-color: transparent;
-    height: 80vh;
-    width: 80vw;
+    height: 38em;
+    width: 68em;
     display: flex;
     align-items: center;
     gap: 5vw;
@@ -110,25 +111,25 @@ body{
 #fondoImgInicio{
     border-radius: 5px;
     background-color: transparent;
-    height: 70vh;
-    width: 25vw;
+    height: 30em;
+    width: 15em;
     position: relative;
     left: 5vw;
 }
 
 #imgInicio{
     border: 1px solid #000;
-    height: 70vh;
-    width: 25vw;
+    height: 30em;
+    width: 22em;
     border-radius: 5px;
 }
 
 #nombre{
     position: relative;
-    left: 5vw;
+    left: 10em;
     background-color: #141414;
-    height: 60vh;
-    width: 40vw;
+    height: 25em;
+    width: 35em;
     display: block;
     font-family: consolas;
     justify-items: center;
@@ -148,8 +149,8 @@ body{
     all: unset; /* ← esto borra los estilos por defecto del <button> */
     display: inline-block;
     background-color: #000000;
-    height: 6vh;
-    width: 10vw;
+    height: 2.5em;
+    width: 8em;
     color: #fceac2;
     border: none;
     text-align: center;
@@ -182,8 +183,8 @@ body{
     top: 35vh;
     justify-self: center;
     background-color: transparent;
-    height: 70vh;
-    width: 80vw;
+    height: 30em;
+    width: 61em;
     display: flex;
     align-items: center;
     gap: 5vw;
@@ -193,10 +194,17 @@ body{
 #fondoImgSobreMi{
     border-radius: 5px;
     background-color: #141414;
-    height: 65vh;
-    width: 20vw;
+    height: 25em;
+    width: 17em;
     position: relative;
     left: 2.5vw;
+}
+
+#imgSobreMi{
+    height: 25em;
+    width: 17em;
+    border-radius: 5px;
+    border: 1px solid #000;
 }
 
 #textoSobreMi{
@@ -204,8 +212,8 @@ body{
     left: 2.5vw;
     border-radius: 5px;
     background-color: #141414;
-    height: 65vh;
-    width: 45vw;
+    height: 25em;
+    width: 36em;
     display: block;
     font-family: consolas;
     align-content: center;
@@ -227,7 +235,7 @@ body{
     font-size: 0.9em;
     position: relative;
     left: 2.5vw;
-    width: 40vw;
+    width: 35em;
 }
 
 
@@ -286,14 +294,6 @@ body{
     text-shadow: 0px 0px 1.5px #00ae47;
 }
 
-#imgSobreMi{
-    height: 65vh;
-    width: 20vw;
-    border-radius: 5px;
-    border: 1px solid #000;
-}
-
-
 
 
 
@@ -301,8 +301,8 @@ body{
     position: relative;
     top: 65vh;
     background-color: #141414;
-    height: 95vh;
-    width: 80vw;
+    height: 34em;
+    width: 60em;
     justify-self: center;
     scroll-margin-top: 15vh;
 }
@@ -323,8 +323,8 @@ body{
     justify-self: center;
     align-self: center;
     background-color: #333;
-    height: 65vh;
-    width: 70vw;
+    height: 23em;
+    width: 56em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -334,13 +334,13 @@ body{
     position: relative;
     left: 2.5vw;
     background-color: #141414;
-    width: 27.5vw;
-    height: 40vh;
+    width: 22em;
+    height: 15em;
 }
 
 #imgProyecto1{
-    width: 27.5vw;
-    height: 40vh;
+    width: 22em;
+    height: 15em;
     border: 1px solid #141414;
 }
 
@@ -356,8 +356,8 @@ body{
     position: relative;
     left: 0vw;
     background-color: transparent;
-    height: 45vh;
-    width: 32.5vw;
+    height: 18em;
+    width: 28em;
     font-size: 0.9em;
     color: #fceac2;
 }
@@ -373,8 +373,8 @@ body{
 
 .tecnologiasProyecto{
     background-color: #141414;
-    height: 4vh;
-    width: 7.5vw;
+    height: 2em;
+    width: 7em;
     color: #fceac2;
     font-size: 0.9em;
     align-content: center;
@@ -417,8 +417,8 @@ Idea descartada temporalmente
     position: relative;
     top: 95vh;
     background-color: #141414;
-    width: 40vw;
-    height: 12vh;
+    width: 15em;
+    height: 2em;
     text-align: center;
     justify-self: center;
     align-content: center;
@@ -430,8 +430,8 @@ Idea descartada temporalmente
     top: 100vh;
     background-color: #000;
     box-shadow: 3px 3px 10px 5px #141414;
-    height: 70vh;
-    width: 35vw;
+    height: 27em;
+    width: 27em;
     justify-self: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -525,8 +525,8 @@ Idea descartada temporalmente
     position: relative;
     justify-self: center;
     top: 130vh;
-    height: 65vh;
-    width: 85vw;
+    height: 22em;
+    width: 67.5em;
     display: block;
     color: #fceac2;
     scroll-margin-top: 15vh;
@@ -534,8 +534,8 @@ Idea descartada temporalmente
 
 #backTituloTecnologias{
     background-color: transparent;
-    width: 85vw;
-    height: 9vh;
+    width: 67.5em;
+    height: 3em;
     align-content: center;
 }
 
@@ -549,8 +549,8 @@ Idea descartada temporalmente
     background-color: #141414;
     border-radius: 10px;
     margin-top: 3%;
-    width: 85vw;
-    height: 40vh;
+    width: 67.5em;
+    height: 15em;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-content: center;
@@ -561,8 +561,8 @@ Idea descartada temporalmente
     background-color: #111;
     border-radius: 5px;
     border: 1px solid #fceac2;
-    height: 32vh;
-    width: 12vw;
+    height: 12em;
+    width: 9em;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
@@ -574,8 +574,8 @@ Idea descartada temporalmente
     margin-top: 7%;
     border: none;
     background-color: transparent;
-    height: 18vh;
-    width: 9vw;
+    height: 8em;
+    width: 7em;
 }
 
 
@@ -588,7 +588,7 @@ Idea descartada temporalmente
     justify-self: center;
     margin: 0%;
     background-color: #141414;
-    height: 50vh;
+    height: 15em;
     width: 100%;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -606,8 +606,8 @@ Idea descartada temporalmente
 
 #contenedorFondo{
     background-color: transparent;
-    width: 22vw;
-    height: 7vh;
+    width: 18em;
+    height: 3em;
     margin: 0%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -617,8 +617,8 @@ Idea descartada temporalmente
 
 #linkedinLink{
     background-color: #000;
-    height: 7vh;
-    width: 10vw;
+    height: 2.6em;
+    width: 8em;
     color: #fceac2;
     display: flex;
     text-decoration: none;
@@ -631,8 +631,8 @@ Idea descartada temporalmente
 
 .linkedinLogo{
     fill: #fceac2;
-    height: 7vh;
-    width: 3.5vw;
+    height: 2.6em;
+    width: 2.6em;
     align-self: center;
     transition: fill 0.3s ease;
 }
@@ -653,8 +653,8 @@ Idea descartada temporalmente
 #copyEmail{
     all: unset; /* ← esto borra los estilos por defecto del <button> */
     background-color: #000;
-    height: 7vh;
-    width: 10vw;
+    height: 2.6em;
+    width: 8em;
     color: #fceac2;
     text-align: center;
     cursor: pointer;
@@ -678,8 +678,8 @@ html{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease-in, transform 0.5s ease;
-    height: 5vh;
-    width: 13vw;
+    height: 2em;
+    width: 10em;
     text-align: center;
     align-content: center;
     border-radius: 10px;
@@ -693,4 +693,179 @@ html{
 
 .oculto{
     display: none;
+}
+
+@media (max-width: 768px){
+    .botonTecho{
+        height: 2.5em;
+        width: 7em;
+    }
+
+    #inicio{
+        width: 100%;
+    }
+    
+    #nombre{
+        top: -5em;
+        left: 2.5em;
+        height: 20em;
+        width: 25em;
+    }
+
+    #sobreMi{
+        top: -2em;
+        background-color: transparent;
+        height: 29em;
+        width: 25em;
+    }
+
+    #textoSobreMi{
+        left: 0em;
+        height: 29em;
+        width: 25em;
+    }
+    
+    #tituloSobreMi{
+        font-size: 1.7em;
+        left: 2.5vw;
+    }
+    
+    #descripcionSobreMi{
+        font-size: 0.9em;
+        left: 2.5vw;
+        width: 25em;
+    }
+
+
+
+
+    #proyectos{
+        top: 2em;
+        height: 29em;
+        width: 28em;
+    }
+    
+    #tituloProyectos{
+        left: 2.5vw;
+        top: 3vh;
+    }
+    
+    #proyecto1{
+        text-align: center;
+        top: 8vh;
+        height: 21em;
+        width: 25em;
+    }
+
+    #tituloProyecto1{
+        margin-top: -1em;
+        font-size: 1.3em;
+    }
+    
+    #descripcionDelProyecto1{
+        background-color: transparent;
+        height: 18em;
+        width: 28em;
+        font-size: 0.9em;
+    }
+    
+    #tecnologiasProyecto1{
+        background-color: transparent;
+        height: 4em;
+        width: 26em;
+        justify-self: center;
+    }
+    
+    .tecnologiasProyecto{
+        height: 2em;
+        width: 7em;
+        font-size: 0.9em;
+    }
+
+
+
+
+    #tecnologias{
+        background-color: transparent;
+        top: 4em;
+        height: 42em;
+        width: 25em;
+    }
+    
+    #backTituloTecnologias{
+        background-color: transparent;
+        width: 25em;
+        height: 3em;
+    }
+    
+    #titulosTecnologias{
+        margin: 0%;
+        font-size: 2.5em;
+        margin-left: 2%;
+    }
+    
+    #displayTecnologias{
+        background-color: #141414;
+        border-radius: 10px;
+        margin-top: 3%;
+        height: 42em;
+        width: 25em;
+        gap: 1em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+
+
+
+
+    #fondo{
+        top: 10em;
+        left: 0%;
+        height: 13em;
+        width: 100%;
+    }
+    
+    #mailTexto{
+        font-size: 1.2em;
+        margin-top: 10vh;
+    }
+
+
+
+
+
+
+
+    #fondoImgInicio{
+        display: none;
+        width: 0em;
+    }
+    
+    #imgInicio{
+        display: none;
+        width: 0em;
+    }
+
+    #fondoImgSobreMi{
+        display: none;
+        width: 0em;
+    }
+
+    #imgSobreMi{
+        display: none;
+        width: 0em;
+    }
+    
+    #fondoImgProyecto1, #imgProyecto1{
+        display: none;
+        width: 0em;
+    }
+
+    #habilidadesTitulo, #habilidades, .rubikContenedores, .rubikHabilidades, .rubikHabilidadesBloque{
+        display: none;
+        width: 0em;
+    }
+
 }
