@@ -5,6 +5,12 @@ body{
     font-family: consolas;
     height: 70em;
     transition: 0.4s ease-in;
+    width: 100%;
+}
+
+img{
+    display: block;
+    max-width: 100%;
 }
 
 #contenedroPrincipal{
@@ -13,6 +19,7 @@ body{
     gap: 10vh;
     justify-items: center;
     background-color: #333;
+    width: 100%;
 }
 
 
@@ -20,8 +27,8 @@ body{
 
 #techo{
     background-color: #141414;
-    height: 3em;
-    width: 100vw;
+    min-height: 3em;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -36,7 +43,7 @@ body{
     border: transparent;
     border-radius: 5px;
     background-color: transparent;
-    height: 2.5em;
+    min-height: 2.5em;  
     width: 8em;
     transition: 0.2s ease-in;
     text-align: center;
@@ -97,7 +104,8 @@ body{
 
 #inicio{
     position: relative;
-    top: 15vh;
+    top: 3em;
+    margin-inline: auto;
     justify-self: center;
     background-color: transparent;
     height: 38em;
@@ -112,9 +120,8 @@ body{
     border-radius: 5px;
     background-color: transparent;
     height: 30em;
-    width: 15em;
-    position: relative;
-    left: 5vw;
+    width: 22em;
+    margin-inline: auto;
 }
 
 #imgInicio{
@@ -125,8 +132,7 @@ body{
 }
 
 #nombre{
-    position: relative;
-    left: 10em;
+    margin-inline: auto;
     background-color: #141414;
     height: 25em;
     width: 35em;
@@ -181,7 +187,7 @@ body{
 #sobreMi{
     position: relative;
     top: 35vh;
-    justify-self: center;
+    margin-inline: auto;
     background-color: transparent;
     height: 30em;
     width: 61em;
@@ -217,7 +223,7 @@ body{
     display: block;
     font-family: consolas;
     align-content: center;
-    color: #fceac2;
+    color: #fceac2; 
 }
 
 #tituloSobreMi{
@@ -225,17 +231,16 @@ body{
     margin-bottom: 2%;
     font-size: 1.7em;
     font-weight: bold;
-    position: relative;
-    left: 2.5vw;
+    width: 90%;
+    margin-inline: auto;
     color: #0077d2;
 }
 
 #descripcionSobreMi{
     margin: 0px;
     font-size: 0.9em;
-    position: relative;
-    left: 2.5vw;
-    width: 35em;
+    margin-inline: auto;
+    width: 90%;
 }
 
 
@@ -301,9 +306,9 @@ body{
     position: relative;
     top: 65vh;
     background-color: #141414;
-    height: 34em;
+    height: 32em;
     width: 60em;
-    justify-self: center;
+    margin-inline: auto;
     scroll-margin-top: 15vh;
 }
 
@@ -312,27 +317,28 @@ body{
     color: #ec1707;
     font-size: 3em;
     position: relative;
-    left: 2.5vw;
+    margin-inline: auto;
+    width: 90%;
     top: 3vh;
     font-weight: bold;
 }
 
 #proyecto1{
     position: relative;
-    top: 8vh;
-    justify-self: center;
-    align-self: center;
+    top: 12%;
+    margin-inline: auto;
     background-color: #333;
     height: 23em;
     width: 56em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
 }
 
 #fondoImgProyecto1{
     align-self: center;
     position: relative;
-    left: 2.5vw;
+    margin-inline: auto;
     background-color: #141414;
     width: 22em;
     height: 15em;
@@ -354,21 +360,22 @@ body{
 #descripcionDelProyecto1{
     align-self: center;
     position: relative;
-    left: 0vw;
     background-color: transparent;
     height: 18em;
     width: 28em;
     font-size: 0.9em;
     color: #fceac2;
+    margin-inline: auto;
 }
 
 #tecnologiasProyecto1{
     background-color: transparent;
+    margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: 8.8vh;
-    width: 32.5vw;
+    width: 100%;
 }
 
 .tecnologiasProyecto{
@@ -377,6 +384,7 @@ body{
     width: 7em;
     color: #fceac2;
     font-size: 0.9em;
+    margin-inline: auto;
     align-content: center;
     text-align: center;
     border-radius: 5px;
@@ -420,7 +428,7 @@ Idea descartada temporalmente
     width: 15em;
     height: 2em;
     text-align: center;
-    justify-self: center;
+    margin-inline: auto;
     align-content: center;
     border: 1px solid #fceac2;
 }
@@ -432,7 +440,7 @@ Idea descartada temporalmente
     box-shadow: 3px 3px 10px 5px #141414;
     height: 27em;
     width: 27em;
-    justify-self: center;
+    margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -523,7 +531,7 @@ Idea descartada temporalmente
 
 #tecnologias{
     position: relative;
-    justify-self: center;
+    margin-inline: auto;
     top: 130vh;
     height: 22em;
     width: 67.5em;
@@ -584,8 +592,6 @@ Idea descartada temporalmente
 #fondo{
     position: relative;
     top: 140vh;
-    left: 0%;
-    justify-self: center;
     margin: 0%;
     background-color: #141414;
     height: 15em;
@@ -595,13 +601,14 @@ Idea descartada temporalmente
     row-gap: 0vh;
     justify-items: center;
     align-items: center;
+    margin-inline: auto;
 }
 
 #mailTexto{
     margin: 0%;
     color: #fceac2;
     font-size: 1.5em;
-    margin-top: 10vh;
+    margin-top: 5%;
 }
 
 #contenedorFondo{
@@ -613,6 +620,7 @@ Idea descartada temporalmente
     grid-template-columns: repeat(2, 1fr);
     align-content: center;
     justify-items: center;
+    margin-inline: auto;
 }
 
 #linkedinLink{
@@ -698,7 +706,7 @@ html{
 @media (max-width: 1110px){
     .botonTecho{
         height: 2.5em;
-        width: 7em;
+        width: 6.5em;
     }
 
     #inicio{
@@ -707,16 +715,22 @@ html{
     
     #nombre{
         top: -5em;
-        left: 2.5em;
-        height: 20em;
-        width: 25em;
+        margin-inline: auto;
+        height: 17em;
+        width: 22em;
     }
+
+    .nombre{
+        transform: scale(00.9em);
+    }
+
+
 
     #sobreMi{
         top: -2em;
         background-color: transparent;
         height: 29em;
-        width: 25em;
+        width: 90%;
     }
 
     #textoSobreMi{
@@ -729,20 +743,16 @@ html{
         font-size: 1.7em;
         left: 2.5vw;
     }
-    
-    #descripcionSobreMi{
-        font-size: 0.9em;
-        left: 2.5vw;
-        width: 25em;
-    }
 
 
 
 
     #proyectos{
-        top: 2em;
-        height: 29em;
-        width: 28em;
+        top: 0%;
+        height: 62vh;
+        width: 90vw;
+        margin-inline: auto;
+        display: inline;
     }
     
     #tituloProyectos{
@@ -752,33 +762,38 @@ html{
     
     #proyecto1{
         text-align: center;
-        top: 8vh;
-        height: 21em;
-        width: 25em;
+        height: 44vh;
+        width: 85%;
+        margin-inline: auto;
+        display: flex;
     }
 
     #tituloProyecto1{
         margin-top: -1em;
         font-size: 1.3em;
+        width: 70vw;
+        margin-inline: auto;
     }
     
     #descripcionDelProyecto1{
         background-color: transparent;
-        height: 18em;
-        width: 28em;
-        font-size: 0.9em;
+        height: 80%;
+        width: 70vw;
+        font-size: 85%;
+        justify-self: center;
+        align-self: center;
     }
     
     #tecnologiasProyecto1{
         background-color: transparent;
         height: 4em;
-        width: 26em;
-        justify-self: center;
+        width: 70vw;
+        margin-inline: auto;
     }
     
     .tecnologiasProyecto{
         height: 2em;
-        width: 7em;
+        width: 80%;
         font-size: 0.9em;
     }
 
@@ -789,12 +804,13 @@ html{
         background-color: transparent;
         top: 4em;
         height: 42em;
-        width: 25em;
+        width: 90%;
+        margin-inline: auto;
     }
     
     #backTituloTecnologias{
         background-color: transparent;
-        width: 25em;
+        width: 90%;
         height: 3em;
     }
     
@@ -806,10 +822,10 @@ html{
     
     #displayTecnologias{
         background-color: #141414;
-        border-radius: 10px;
         margin-top: 3%;
-        height: 42em;
-        width: 25em;
+        height: 100%;
+        width: 90%;
+        margin-inline: auto;
         gap: 1em;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -822,9 +838,7 @@ html{
 
     #fondo{
         top: 10em;
-        left: 0%;
         height: 13em;
-        width: 100%;
     }
     
     #mailTexto{
