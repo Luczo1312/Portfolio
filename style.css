@@ -1,61 +1,59 @@
 body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #333;
-    font-family: consolas;
-    height: 70em;
-    transition: 0.4s ease-in;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    font-family: 'Consolas', monospace;
+    min-height: 100vh;
+    transition: 0.3s ease-in;
     width: 100%;
+    color: #fceac2;
+    line-height: 1.5;
+    overflow-x: hidden;
 }
 
 img{
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 #contenedroPrincipal{
     display: grid;
     grid-template-rows: auto;
-    gap: 10vh;
+    gap: 3rem;
     justify-items: center;
-    background-color: #333;
     width: 100%;
+    padding-top: 3rem;
 }
 
-
-
-
 #techo{
-    background-color: #141414;
-    min-height: 3em;
+    background-color: #0c0c0c;
+    height: 3rem;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 1rem;
     position: fixed;
     z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .botonTecho{
-    position: relative;
-    right: 20px;
-    border: transparent;
-    border-radius: 5px;
+    border: none;
+    border-radius: 4px;
     background-color: transparent;
-    min-height: 2.5em;  
-    width: 8em;
-    transition: 0.2s ease-in;
+    padding: 0.5rem 1rem;
     text-align: center;
-    align-content: center;
     text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.2s ease-in;
 }
 
 .botonTecho:hover{
-    transform: scale(1.01);
+    transform: translateY(-2px);
     cursor: pointer;
 }
-
 
 #botonNaranja{
     color: #ff6600;
@@ -73,387 +71,375 @@ img{
     color: #00ae47;
 }
 
-
-
 #botonNaranja:hover{
-    color: #141414;
+    color: #0c0c0c;
     background-color: #ff6600;
-    box-shadow: 0px 0px 10px 2px #ff6600;
+    box-shadow: 0px 0px 8px 1px #ff6600;
 }
 
 #botonAzul:hover{
-    color: #141414;
+    color: #0c0c0c;
     background-color: #0077d2;
-    box-shadow: 0px 0px 10px 2px #0077d2;
+    box-shadow: 0px 0px 8px 1px #0077d2;
 }
 
 #botonRojo:hover{
-    color: #141414;
+    color: #0c0c0c;
     background-color: #ec1707;
-    box-shadow: 0px 0px 10px 2px #ec1707;
+    box-shadow: 0px 0px 8px 1px #ec1707;
 }
 
 #botonVerde:hover{
-    color: #141414;
+    color: #0c0c0c;
     background-color: #00ae47;
-    box-shadow: 0px 0px 10px 2px #00ae47;
+    box-shadow: 0px 0px 8px 1px #00ae47;
 }
 
-
-
+#inicio, #sobreMi, #proyectos, #tecnologias {
+    scroll-margin-top: 4rem;
+    transition: scroll-margin-top 0.3s ease;
+}
 
 #inicio{
-    position: relative;
-    top: 3em;
-    margin-inline: auto;
-    justify-self: center;
-    background-color: transparent;
-    height: 38em;
-    width: 68em;
+    width: 90%;
+    max-width: 1000px;
     display: flex;
     align-items: center;
-    gap: 5vw;
-    scroll-margin-top: 15vh;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    min-height: 70vh;
 }
 
 #fondoImgInicio{
-    border-radius: 5px;
-    background-color: transparent;
-    height: 30em;
-    width: 22em;
-    margin-inline: auto;
+    width: 35%;
+    max-width: 300px;
 }
 
 #imgInicio{
     border: 1px solid #000;
-    height: 30em;
-    width: 22em;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 #nombre{
-    margin-inline: auto;
-    background-color: #141414;
-    height: 25em;
-    width: 35em;
-    display: block;
-    font-family: consolas;
-    justify-items: center;
-    align-content: center;
-    color: #fceac2;
+    background-color: #0c0c0c;
+    padding: 2.5rem 2rem;
+    border-radius: 5px;
+    width: 40%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
 }
 
 .nombre{
-    font-size: 3.5em;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-top: 0%;
-    margin-bottom: 2%;
+    margin: 0;
+    line-height: 1.2;
     color: #ff6600;
-}
-
-.botonLinks{
-    all: unset; /* ← esto borra los estilos por defecto del <button> */
-    display: inline-block;
-    background-color: #000000;
-    height: 2.5em;
-    width: 8em;
-    color: #fceac2;
-    border: none;
     text-align: center;
-    align-content: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.4s ease-in-out;
-    border-bottom: 3px solid #ff6600;
-    border-right: 3px solid #ff6600;
 }
 
 #desarrollador{
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
     color: #fceac2;
+    text-align: center;
+}
+
+#botonesLink {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    justify-content: center;
+}
+
+.botonLinks{
+    all: unset;
+    display: inline-block;
+    background-color: #000000;
+    padding: 0.7rem 1.2rem;
+    color: #fceac2;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    border-bottom: 2px solid #ff6600;
+    font-size: 0.9rem;
 }
 
 .botonLinks:hover{
     color: #000;
     background-color: #ff6600;
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     cursor: pointer;
 }
 
-
-
-
-
 #sobreMi{
-    position: relative;
-    top: 35vh;
-    margin-inline: auto;
-    background-color: transparent;
-    height: 30em;
-    width: 61em;
+    width: 90%;
+    max-width: 1000px;
     display: flex;
     align-items: center;
-    gap: 5vw;
-    scroll-margin-top: 15vh;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 0;
 }
 
 #fondoImgSobreMi{
-    border-radius: 5px;
-    background-color: #141414;
-    height: 25em;
-    width: 17em;
-    position: relative;
-    left: 2.5vw;
+    width: 35%;
+    max-width: 300px;
+    order: 2;
 }
 
 #imgSobreMi{
-    height: 25em;
-    width: 17em;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    border: 1px solid #000;
+    object-fit: cover;
 }
 
 #textoSobreMi{
-    position: relative;
-    left: 2.5vw;
     border-radius: 5px;
-    background-color: #141414;
-    height: 25em;
-    width: 36em;
-    display: block;
-    font-family: consolas;
-    align-content: center;
-    color: #fceac2; 
+    background-color: #0c0c0c;
+    padding: 2rem;
+    width: 65%;
+    max-width: 600px;
 }
 
 #tituloSobreMi{
-    margin: 0%;
-    margin-bottom: 2%;
-    font-size: 1.7em;
+    margin: 0 0 1.2rem 0;
+    font-size: 1.8rem;
     font-weight: bold;
-    width: 90%;
-    margin-inline: auto;
     color: #0077d2;
 }
 
 #descripcionSobreMi{
-    margin: 0px;
-    font-size: 0.9em;
-    margin-inline: auto;
-    width: 90%;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
-
 
 #R{
     color: #0077d2;
-    text-shadow: 0px 0px 1.5px #0077d2;
+    text-shadow: 0px 0px 1px #0077d2;
 }
 
 #u{
     color: #ec1707;
-    text-shadow: 0px 0px 1.5px #ec1707;
+    text-shadow: 0px 0px 1px #ec1707;
 }
 
 #b{
     color: #00ae47;
-    text-shadow: 0px 0px 1.5px #00ae47;
+    text-shadow: 0px 0px 1px #00ae47;
 }
 
 #i{
     color: #ff6600;
-    text-shadow: 0px 0px 1.5px #ff6600;
+    text-shadow: 0px 0px 1px #ff6600;
 }
 
 #k{
     color: #ffd500;
-    text-shadow: 0px 0px 1.5px #ffd500;
+    text-shadow: 0px 0px 1px #ffd500;
 }
 
 #HTML{
     color: #ff6600;
-    text-shadow: 0px 0px 1.5px #ff6600;
+    text-shadow: 0px 0px 1px #ff6600;
 }
 
 #CSS{
     color: #0077d2;
-    text-shadow: 0px 0px 1.5px #0077d2;
+    text-shadow: 0px 0px 1px #0077d2;
 }
 
 #JS{
     color: #ffd500;
-    text-shadow: 0px 0px 1.5px #ffd500;
+    text-shadow: 0px 0px 1px #ffd500;
 }
 
 #Python{
     color: #00ae47;
-    text-shadow: 0px 0px 1.5px #00ae47;
+    text-shadow: 0px 0px 1px #00ae47;
 }
 
 #Tkinter{
     color: #0077d2;
-    text-shadow: 0px 0px 1.5px #0077d2;
+    text-shadow: 0px 0px 1px #0077d2;
 }
 
 #OpenPyXl{
     color: #00ae47;
-    text-shadow: 0px 0px 1.5px #00ae47;
+    text-shadow: 0px 0px 1px #00ae47;
 }
 
-
-
-
 #proyectos{
-    position: relative;
-    top: 65vh;
+    width: 90%;
+    max-width: 1000px;    
     background-color: #141414;
-    height: 32em;
-    width: 60em;
-    margin-inline: auto;
-    scroll-margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    scroll-margin-top: 3.5rem;
 }
 
 #tituloProyectos{
-    margin: 0%;
+    margin: 0;
     color: #ec1707;
-    font-size: 3em;
-    position: relative;
-    margin-inline: auto;
-    width: 90%;
-    top: 3vh;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
-#proyecto1{
-    position: relative;
-    top: 12%;
-    margin-inline: auto;
+.tituloProyectos{
+    margin: 0;
+    color: #ec1707;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.proyecto {
     background-color: #333;
-    height: 23em;
-    width: 56em;
+    border-radius: 5px;
+    padding: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-inline: auto;
-}
-
-#fondoImgProyecto1{
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    width: 90%;
     align-self: center;
-    position: relative;
-    margin-inline: auto;
-    background-color: #141414;
-    width: 22em;
-    height: 15em;
+    box-sizing: border-box;
 }
 
-#imgProyecto1{
-    width: 22em;
-    height: 15em;
-    border: 1px solid #141414;
-}
-
-#tituloProyecto1{
-    color: #ff6600;
-    margin: 0px;
-    margin-top: -10px;
-    font-size: 1.5em;
-}
-
-#descripcionDelProyecto1{
-    align-self: center;
-    position: relative;
-    background-color: transparent;
-    height: 18em;
-    width: 28em;
-    font-size: 0.9em;
-    color: #fceac2;
-    margin-inline: auto;
-}
-
-#tecnologiasProyecto1{
-    background-color: transparent;
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 8.8vh;
+.fondoImgProyecto{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgProyecto{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.tituloProyecto{
+    color: #ff6600;
+    margin: 0 0 0.8rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.descripcionDelProyecto{
+    color: #fceac2;
+    line-height: 1.5;
+}
+
+.descripcionTexto {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.tecnologiasProyectoContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 0.6rem;
+    margin-top: 1.2rem;
 }
 
 .tecnologiasProyecto{
-    background-color: #141414;
-    height: 2em;
-    width: 7em;
-    color: #fceac2;
-    font-size: 0.9em;
-    margin-inline: auto;
-    align-content: center;
+    background-color: #0c0c0c;
+    padding: 0.5rem;
+    border-radius: 4px;
     text-align: center;
-    border-radius: 5px;
+    font-size: 0.85rem;
 }
 
-
-/*
-
-Idea descartada temporalmente
-
-#linkProyecto1{
-    background-color: #000;
-    border: none;
-    border-radius: 5px;
-    height: 5vh;
-    width: 12vw;
-    color: #ff6600;
-    margin-top: 1px;
-    transition: 0.4s ease-in;
-}
-
-#linkProyecto1:hover{
-    background-color: #ff6600;
-    color: #000;
+/* Estilo para los enlaces de proyectos */
+.linkProyecto {
+    background-color: #0c0c0c;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ff6600; /* Color naranja para distinguirlo */
+    display: inline-block;
+    text-decoration: none;
+    border-right: transparent;
+    border-bottom: 2px solid #ff6600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
-*/
+.linkProyecto:hover {
+    background-color: #ff6600;
+    color: #0c0c0c;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 8px rgba(255, 102, 0, 0.3);
+}
 
+/* Contenedor para los enlaces de proyectos */
+.linksProyectoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+}
 
-
+#habilidadesBlandasBack {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #habilidadesTitulo{
-    border-radius: 10px;
-    font-size: 2.5em;
+    border-radius: 5px;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #fceac2;
-    position: relative;
-    top: 95vh;
-    background-color: #141414;
-    width: 15em;
-    height: 2em;
+    background-color: #0c0c0c;
+    width: 100%;
+    max-width: 450px;
+    padding: 0.8rem;
     text-align: center;
-    margin-inline: auto;
-    align-content: center;
-    border: 1px solid #fceac2;
+    margin-bottom: 1.5rem;
+    border: 1px solid #333;
 }
 
 #habilidades{
-    position: relative;
-    top: 100vh;
     background-color: #000;
-    box-shadow: 3px 3px 10px 5px #141414;
-    height: 27em;
-    width: 27em;
-    margin-inline: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1/1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 0px;
-    row-gap: 0px;
-    align-items: center;
-    justify-items: center;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
-
 .rubikContenedores{
-    height: 93%;
-    width: 93%;
+    width: 100%;
+    height: 100%;
 }
 
 .rubikHabilidades{
@@ -465,8 +451,8 @@ Idea descartada temporalmente
 .rubikHabilidadesBloque{
     width: 100%;
     height: 100%;
-    transition: transform 0.6s; /* Duración del giro */
-    transform-style: preserve-3d; /* Mantiene el 3D de los hijos */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
     position: relative;
 }
 
@@ -479,30 +465,26 @@ Idea descartada temporalmente
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-
-    /* Centrado */
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* Asegura que el texto esté en el medio incluso con texto multilineal */
     text-align: center;
-    padding: 10px;
+    padding: 0.6rem;
     box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
 
 .flipFront{
-    border-radius: 10px;
     background-color: #ec1707;
-    font-size: 1em;
+    font-weight: bold;
     color: #000;
 }
 
 .flipBack{
-    border-radius: 10px;
     background-color: #ec1707;
     transform: rotateY(180deg);
-    font-size: 0.8em;
+    font-size: 0.75rem;
     color: #000;
 }
 
@@ -526,360 +508,412 @@ Idea descartada temporalmente
     background-color: #ff6600;
 }
 
-
-
-
 #tecnologias{
-    position: relative;
-    margin-inline: auto;
-    top: 130vh;
-    height: 22em;
-    width: 67.5em;
-    display: block;
-    color: #fceac2;
-    scroll-margin-top: 15vh;
+    width: 90%;
+    max-width: 1000px;
+    padding: 1.5rem 0;
 }
 
 #backTituloTecnologias{
-    background-color: transparent;
-    width: 67.5em;
-    height: 3em;
-    align-content: center;
+    width: 100%;
+    margin-bottom: 1.2rem;
 }
 
 #titulosTecnologias{
-    margin: 0%;
-    font-size: 2.5em;
-    margin-left: 2%;
+    margin: 0;
+    font-size: 2.2rem;
+    color: #00ae47;
+    font-weight: bold;
 }
 
 #displayTecnologias{
-    background-color: #141414;
-    border-radius: 10px;
-    margin-top: 3%;
-    width: 67.5em;
-    height: 15em;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-content: center;
-    justify-items: center;
+    background-color: #0c0c0c;
+    border-radius: 5px;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.2rem;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #0c0c0c;
+}
+
+#displayTecnologias::-webkit-scrollbar {
+    height: 8px;
+}
+
+#displayTecnologias::-webkit-scrollbar-track {
+    background: #0c0c0c;
+    border-radius: 4px;
+}
+
+#displayTecnologias::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
 }
 
 .tecnologiasCuadro{
     background-color: #111;
     border-radius: 5px;
-    border: 1px solid #fceac2;
-    height: 12em;
-    width: 9em;
+    border: 1px solid #333;
+    padding: 1.2rem 0.8rem;
+    min-width: 150px;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
     justify-items: center;
     align-items: center;
-    margin: 0%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 auto;
+}
+
+.tecnologiasCuadro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tecnologiasCuadro p {
+    margin: 0.6rem 0 0 0;
+    font-size: 1rem;
 }
 
 .imgTecnologias{
-    margin-top: 7%;
-    border: none;
-    background-color: transparent;
-    height: 8em;
-    width: 7em;
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    object-fit: contain;
 }
 
-
-
-
 #fondo{
-    position: relative;
-    top: 140vh;
-    margin: 0%;
-    background-color: #141414;
-    height: 15em;
-    width: 100%;
+    background-color: #0c0c0c;
+    padding: 2rem 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 0vh;
+    grid-template-rows: auto auto;
+    gap: 1.2rem;
     justify-items: center;
     align-items: center;
-    margin-inline: auto;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    right: 0;
 }
 
 #mailTexto{
-    margin: 0%;
+    margin: 0;
     color: #fceac2;
-    font-size: 1.5em;
-    margin-top: 5%;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
 }
 
 #contenedorFondo{
-    background-color: transparent;
-    width: 18em;
-    height: 3em;
-    margin: 0%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-content: center;
-    justify-items: center;
-    margin-inline: auto;
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
 }
 
 #linkedinLink{
     background-color: #000;
-    height: 2.6em;
-    width: 8em;
+    padding: 0.7rem 1rem;
     color: #fceac2;
     display: flex;
+    align-items: center;
+    gap: 0.6rem;
     text-decoration: none;
-    align-content: center;
-    justify-items: center;
-    text-align: center;
-    cursor: pointer;
-    transition: color 0.3s ease;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .linkedinLogo{
     fill: #fceac2;
-    height: 2.6em;
-    width: 2.6em;
-    align-self: center;
+    height: 1.3rem;
+    width: 1.3rem;
     transition: fill 0.3s ease;
 }
 
 #linkedinText {
     transition: color 0.3s ease;
+    margin: 0;
 }
-  
-/* Cambios al hacer hover en el contenedor */
+
 #linkedinLink:hover .linkedinLogo {
     fill: #0077d2;
 }
-  
+
 #linkedinLink:hover #linkedinText {
     color: #0077d2;
 }
 
 #copyEmail{
-    all: unset; /* ← esto borra los estilos por defecto del <button> */
+    all: unset;
     background-color: #000;
-    height: 2.6em;
-    width: 8em;
+    padding: 0.7rem 1rem;
     color: #fceac2;
     text-align: center;
     cursor: pointer;
-    transition: color 0.3s ease;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 #copyEmail:hover{
     color: #ec1707;
+    transform: translateY(-2px);
 }
 
 html{
     scroll-behavior: smooth;
+    --scroll-timeline: 0.8s;
+    --scroll-easing: cubic-bezier(0.25, 1, 0.5, 1);
+    scroll-behavior: smooth var(--scroll-timeline) var(--scroll-easing);
 }
 
 #alerta{
-    position: absolute;
-    left: 58vw;
-    bottom: 15vh;
+    position: fixed;
+    color: #000;
+    right: 2rem;
+    bottom: 2rem;
     background-color: #fceac2;
     font-weight: bold;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease-in, transform 0.5s ease;
-    height: 2em;
-    width: 10em;
+    padding: 0.75rem 1.5rem;
     text-align: center;
-    align-content: center;
     border-radius: 10px;
     z-index: 998;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 #alerta.visible{
     opacity: 1;
-    transform: translateY(0);  
+    color: #000;
+    transform: translateY(0);
 }
 
 .oculto{
     display: none;
 }
 
-@media (max-width: 1110px){
-    .botonTecho{
-        height: 2.5em;
-        width: 6.5em;
+@media (max-width: 1024px){
+    .nombre{
+        font-size: 2rem;
+    }
+    
+    .tituloProyectos, #titulosTecnologias {
+        font-size: 2rem;
+    }
+    
+    #displayTecnologias .tecnologiasCuadro {
+        min-width: 130px;
+        padding: 1rem 0.7rem;
     }
 
-    #inicio{
+    .imgTecnologias {
+        max-width: 55px;
+    }
+}
+
+@media (max-width: 768px){
+    #techo {
+        padding: 0.4rem;
+    }
+    
+    .botonTecho {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.85rem;
+    }
+    
+    #inicio, #sobreMi {
+        flex-direction: column;
+        padding-top: 3.5rem;
+    }
+    
+    #fondoImgInicio, #fondoImgSobreMi {
+        width: 70%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    #nombre, #textoSobreMi {
+        width: 85%;
+        padding: 1.2rem;
+        min-height: auto;
+    }
+    
+    #fondoImgSobreMi {
+        order: 1;
+    }
+    
+    #textoSobreMi {
+        order: 2;
         width: 100%;
     }
     
-    #nombre{
-        top: -5em;
-        margin-inline: auto;
-        height: 17em;
-        width: 22em;
-    }
-
-    .nombre{
-        transform: scale(00.9em);
-    }
-
-
-
-    #sobreMi{
-        top: -2em;
-        background-color: transparent;
-        height: 29em;
-        width: 90%;
-    }
-
-    #textoSobreMi{
-        left: 0em;
-        height: 29em;
-        width: 25em;
+    .nombre {
+        font-size: 2rem;
     }
     
-    #tituloSobreMi{
-        font-size: 1.7em;
-        left: 2.5vw;
-    }
-
-
-
-
-    #proyectos{
-        top: 0%;
-        height: 62vh;
-        width: 90vw;
-        margin-inline: auto;
-        display: inline;
+    #desarrollador {
+        font-size: 1.1rem;
     }
     
-    #tituloProyectos{
-        left: 2.5vw;
-        top: 3vh;
+    #habilidadesTitulo {
+        font-size: 1.6rem;
     }
     
-    #proyecto1{
+    #habilidades {
+        display: none;
+    }
+    
+    #habilidadesTitulo {
+        display: none;
+    }
+    
+    #displayTecnologias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: visible;
+        gap: 1rem;
+    }
+    
+    #displayTecnologias .tecnologiasCuadro {
+        min-width: auto;
+        width: 100%;
+        padding: 1rem 0.6rem;
+    }
+    
+    .imgTecnologias {
+        max-width: 50px;
+    }
+    
+    .tituloProyectos, #titulosTecnologias {
+        font-size: 1.8rem;
         text-align: center;
-        height: 44vh;
-        width: 85%;
-        margin-inline: auto;
-        display: flex;
-    }
-
-    #tituloProyecto1{
-        margin-top: -1em;
-        font-size: 1.3em;
-        width: 70vw;
-        margin-inline: auto;
     }
     
-    #descripcionDelProyecto1{
-        background-color: transparent;
-        height: 80%;
-        width: 70vw;
-        font-size: 85%;
-        justify-self: center;
-        align-self: center;
+    .proyecto {
+        padding: 1.2rem;
+        grid-template-columns: 1fr;
     }
     
-    #tecnologiasProyecto1{
-        background-color: transparent;
-        height: 4em;
-        width: 70vw;
-        margin-inline: auto;
+    .tituloProyecto {
+        text-align: center;
     }
     
-    .tecnologiasProyecto{
-        height: 2em;
-        width: 80%;
-        font-size: 0.9em;
-    }
-
-
-
-
-    #tecnologias{
-        background-color: transparent;
-        top: 4em;
-        height: 42em;
+    #proyectos {
         width: 90%;
-        margin-inline: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
-    #backTituloTecnologias{
-        background-color: transparent;
-        width: 90%;
-        height: 3em;
+    #fondo {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        padding: 1.5rem 5%;
     }
     
-    #titulosTecnologias{
-        margin: 0%;
-        font-size: 2.5em;
-        margin-left: 2%;
+    #mailTexto {
+        padding: 0 1rem;
+        box-sizing: border-box;
     }
     
-    #displayTecnologias{
-        background-color: #141414;
-        margin-top: 3%;
-        height: 100%;
-        width: 90%;
-        margin-inline: auto;
-        gap: 1em;
+    .linkProyecto {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.9rem;
+        width: 100%; /* En móviles ocupa todo el ancho */
+    }
+    
+    .linksProyectoContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .botonTecho {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.75rem;
+        margin: 0 0.15rem;
+    }
+    
+    .nombre {
+        font-size: 1.7rem;
+    }
+    
+    #desarrollador {
+        font-size: 1rem;
+    }
+    
+    .botonLinks {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.85rem;
+    }
+    
+    #tituloSobreMi {
+        font-size: 1.5rem;
+    }
+    
+    .tituloProyectos, #titulosTecnologias {
+        font-size: 1.5rem;
+    }
+    
+    .proyecto, #tecnologias {
+        padding: 1.2rem;
+    }
+    
+    .proyecto {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    #displayTecnologias {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-
-
-
-
-
-
-    #fondo{
-        top: 10em;
-        height: 13em;
+        padding: 1rem;
+        gap: 0.8rem;
     }
     
-    #mailTexto{
-        font-size: 1.2em;
-        margin-top: 10vh;
-    }
-
-
-
-
-
-
-
-    #fondoImgInicio{
-        display: none;
-        width: 0em;
+    #displayTecnologias .tecnologiasCuadro {
+        padding: 0.8rem 0.5rem;
     }
     
-    #imgInicio{
-        display: none;
-        width: 0em;
-    }
-
-    #fondoImgSobreMi{
-        display: none;
-        width: 0em;
-    }
-
-    #imgSobreMi{
-        display: none;
-        width: 0em;
+    .imgTecnologias {
+        max-width: 45px;
     }
     
-    #fondoImgProyecto1, #imgProyecto1{
-        display: none;
-        width: 0em;
+    .tecnologiasCuadro p {
+        font-size: 0.85rem;
+        margin-top: 0.4rem;
     }
-
-    #habilidadesTitulo, #habilidades, .rubikContenedores, .rubikHabilidades, .rubikHabilidadesBloque{
-        display: none;
-        width: 0em;
+    
+    #mailTexto {
+        font-size: 0.9rem;
     }
+    
+    #contenedorFondo {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    #fondo {
+        padding: 1.2rem 5%;
+    }
+}
 
+@media (max-width: 350px) {
+    #displayTecnologias {
+        grid-template-columns: 1fr;
+    }
+    
+    .botonTecho {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.7rem;
+        margin: 0 0.1rem;
+    }
 }
