@@ -9,6 +9,11 @@ body{
     color: #fceac2;
     line-height: 1.5;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 img{
@@ -97,7 +102,6 @@ img{
 
 #inicio, #sobreMi, #proyectos, #tecnologias {
     scroll-margin-top: 4rem;
-    transition: scroll-margin-top 0.3s ease;
 }
 
 #inicio{
@@ -295,18 +299,13 @@ img{
     scroll-margin-top: 3.5rem;
 }
 
-#tituloProyectos{
-    margin: 0;
-    color: #ec1707;
-    font-size: 2.2rem;
-    font-weight: bold;
-}
-
 .tituloProyectos{
     margin: 0;
     color: #ec1707;
     font-size: 2.2rem;
     font-weight: bold;
+    width: 90%;
+    align-self: center;
 }
 
 .proyecto {
@@ -664,13 +663,6 @@ img{
 #copyEmail:hover{
     color: #ec1707;
     transform: translateY(-2px);
-}
-
-html{
-    scroll-behavior: smooth;
-    --scroll-timeline: 0.8s;
-    --scroll-easing: cubic-bezier(0.25, 1, 0.5, 1);
-    scroll-behavior: smooth var(--scroll-timeline) var(--scroll-easing);
 }
 
 #alerta{
